@@ -1,0 +1,44 @@
+
+app.config(["$routeProvider",function($routeProvider){
+	$routeProvider
+				.when("/info",{
+					templateUrl:"tpls/info.html",
+					controller:"infoController"
+				})	
+				.when("/pass",{
+					templateUrl:"tpls/pass.html",
+					controller:"passController"
+				})	
+				.when("/page",{
+					templateUrl:"tpls/page.html",
+					controller:"pageController"
+				})	
+				.when("/adv",{
+					templateUrl:"tpls/adv.html",
+					controller:"advController"
+				})					
+				.when("/book",{
+					templateUrl:"tpls/book.html",
+					controller:"bookController"
+				})	
+				.when("/column",{
+					templateUrl:"tpls/column.html",
+					controller:"columnController"
+				})	
+				.when("/list",{
+					templateUrl:"tpls/list.html",
+					controller:"listController"
+				})	
+				.when("/add",{
+					templateUrl:"tpls/add.html",
+					controller:"addController"
+				})	
+				.when("/cate",{
+					templateUrl:"tpls/cate.html",
+					controller:"cateController"
+				})				
+				.otherwise({
+			        redirectTo: '/info'
+			      });
+				
+}]);
